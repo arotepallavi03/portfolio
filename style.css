@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(232, 223, 212);
+    color: #333;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(111, 159, 115);
+    color: rgb(245, 241, 241);
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(240, 242, 243);
+    margin: 0 15px;
+    text-decoration: none;
+}
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+    box-sizing: border-box;
+    background-color: rgb(232, 223, 212);
+}
+.aboutcontent {
+    flex: 1;
+    max-width: 800px;
+}
+
+.homeimage {
+    flex: 0 0 800px;
+    height: 100%;
+    position: relative;
+}
+
+.homeimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+
+    mask-image:
+        linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+        linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+
+    mask-composite: intersect;
+}
+
+.aboutcontent h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.aboutcontent p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    width: 250px;
+    min-height: 150px;
+    padding: 25px;
+    color: rgb(249, 243, 242);
+    background-color: rgb(109, 148, 111);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section {
+    background: rgb(232, 223, 212);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    width: 250px;
+    padding: 25px;
+    background-color:rgb(109, 148, 111);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 15px;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(111, 159, 115);
+    color: rgb(237, 233, 233);
+}
